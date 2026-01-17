@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Václav Lubas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Osobní web Václava Lubase – student kybernetiky. Tvořím weby v HTML/CSS a programuji v C#." />
+    <meta name="keywords" content="osobní web, portfolio, Václav Lubas, C#, HTML, CSS, web, programování" />
 </head>
 <body>
-$END$
+<header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">☰</label>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Info</a></li>
+            <li><a href="projekty.html">Projekty</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="formular.html">Formulář</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="projekty">
+    <div class="projekty-container">
+        <div class="prjekty-box"> <h1>Weather2Film</h1><p>Doporučení Filmů pomocí API z počasí</p> <img src="images/img1.png" alt="weather2film"></div>
+    </div>
+    <div class="projekty-container">
+        <div class="prjekty-box"> <h1>Hra v Unity</h1><p>Fps hra v Unity</p> <img src="images/img2.png" alt="hra v unity"></div>
+    </div>
+    <div class="projekty-container">
+        <div class="prjekty-box"> <h1>A další..</h1> <p>...</p> <div id="pradny"></div></div>
+    </div>
+    
+</main>
+<footer>
+    <p>Pololetní projekt pro PW1</p>
+    <p>© 2026 Václav Lubas</p>
+</footer>
 </body>
 </html>

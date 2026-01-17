@@ -1,10 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Václav Lubas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Osobní web Václava Lubase – student kybernetiky. Tvořím weby v HTML/CSS a programuji v C#." />
+  <meta name="keywords" content="osobní web, portfolio, Václav Lubas, C#, HTML, CSS, web, programování" />
 </head>
 <body>
-$END$
+<header>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <label for="nav-toggle" class="nav-toggle-label">☰</label>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="info.html">Info</a></li>
+      <li><a href="projekty.html">Projekty</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="formular.html">Formulář</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="formular">
+  <form>
+    <h2>Osobní údaje</h2>
+
+    <label>Jméno:
+      <input type="text" name="firstname" placeholder="Zadejte jméno..." required>
+    </label>
+
+    <label>Příjmení:
+      <input type="text" name="lastname" placeholder="Zadejte příjmení..." required>
+    </label>
+
+    <label>Věk:
+      <input type="number" name="age" min="1" max="120" required>
+    </label>
+
+    <label>Datum narození:
+      <input type="date" name="birthday" required>
+    </label>
+
+    <h3>Pohlaví:</h3>
+    <label><input type="radio" name="gender" value="male" required> Muž</label>
+    <label><input type="radio" name="gender" value="female"> Žena</label>
+    <label><input type="radio" name="gender" value="other"> Jiné</label>
+
+    <label>Město:
+      <select name="city" required>
+        <option value="" disabled selected hidden>Vyberte město</option>
+        <option value="praha">Praha</option>
+        <option value="brno">Brno</option>
+        <option value="ostrava">Ostrava</option>
+        <option value="plzen">Plzeň</option>
+      </select>
+    </label>
+
+    <label>
+      Souhlasím se zpracováním osobních údajů
+      <input type="checkbox" name="gdpr" required>
+    </label>
+
+    <label>
+      Poznámka:
+      <textarea name="note" cols="40" rows="6" placeholder="Zde můžete zanechat doplňující informace..." required></textarea>
+    </label>
+
+    <button type="submit">Odeslat</button>
+    <button type="reset">Vymazat</button>
+  </form>
+
+</main>
+<footer>
+  <p>Pololetní projekt pro PW1</p>
+  <p>© 2026 Václav Lubas</p>
+</footer>
 </body>
 </html>

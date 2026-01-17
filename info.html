@@ -1,10 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Václav Lubas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Osobní web Václava Lubase – student kybernetiky. Tvořím weby v HTML/CSS a programuji v C#." />
+    <meta name="keywords" content="osobní web, portfolio, Václav Lubas, C#, HTML, CSS, web, programování" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-$END$
+<header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">☰</label>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Info</a></li>
+            <li><a href="projekty.html">Projekty</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="formular.html">Formulář</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="info">
+    <section class="info-zakladni">
+        <h1>O mně</h1>
+        <p>Jsem sedmnáctiletý student <a href="https://kyberna.cz">Školy aplikované kybernetiky</a> v Hradci Králové. Ve studiu se zaměřuji hlavně na oblast programování a moderních technologií, protože mě baví vytvářet věci, které nejsou jen vizuálně zajímavé, ale zároveň fungují v praxi. Programování pro mě představuje způsob, jak převádět nápady do reálných aplikací, skriptů nebo menších projektů, které řeší konkrétní úkoly nebo umožňují uživatelům nějakou formu interakce. Láká mě logika algoritmů, hledání efektivních postupů a postupné zdokonalování kódu, díky čemuž si uvědomuji, že tato oblast nabízí široké možnosti uplatnění do budoucna.
+            <br>
+            Vedle programování se zajímám také o grafický design, který vnímám spíš jako doplňující nebo vedlejší oblast. Pomáhá mi totiž lépe přemýšlet nad tím, jak budou výsledné aplikace nebo projekty působit na uživatele vizuálně. Baví mě práce s kompozicí, typografií a barvami, protože díky nim lze technická řešení doplnit o estetickou stránku a celkový uživatelský dojem.</p>
+    </section>
+    <section class="info-dovednosti">
+        <h2>Technické dovednosti:</h2>
+        <ul>
+            <li>Programování v C#</li>
+            <li>Vytváření webů v HTML a CSS</li>
+            <li>Základy UI/UX designu</li>
+            <li>Práce s Git</li>
+        </ul>
+    </section>
+    <section class="info-technologie">
+        <h2>Technologie, které používám:</h2>
+        <table>
+            <tr>
+                <th>Název</th>
+                <th>Úroveň</th>
+                <th>Doba</th>
+            </tr>
+            <tr>
+                <td>C#</td>
+                <td>Středně pokročilý</td>
+                <td>2 roky</td>
+            </tr>
+            <tr>
+                <td>HTML/CSS</td>
+                <td>Pokročilý</td>
+                <td>2 roky</td>
+            </tr>
+            <tr>
+                <td>UI/UX, design</td>
+                <td>Středně pokročilý</td>
+                <td>2 rok</td>
+            </tr>
+        </table>
+    </section>
+
+    <div class="boxy">
+        <div class="box1">
+            <p>C#</p>
+            <i class="fa-solid fa-terminal"></i>
+        </div>
+        <div class="box2">
+            <p>HTML</p>
+            <i class="fa-brands fa-html5"></i>
+
+        </div>
+        <div class="box3">
+            <p>CSS</p>
+            <i class="fa-brands fa-css3-alt"></i>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <p>Pololetní projekt pro PW1</p>
+    <p>© 2026 Václav Lubas</p>
+</footer>
 </body>
 </html>
